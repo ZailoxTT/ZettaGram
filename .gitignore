@@ -31,5 +31,8 @@ TMessagesProj_AppHuawei/afat/
 Keytool.zip
 Cherrygram.jks
 mykey.jks
+*.jks
+API_KEYS
 actions-runner
 secrets_for_ci.env
+Screenshot_*.jpg

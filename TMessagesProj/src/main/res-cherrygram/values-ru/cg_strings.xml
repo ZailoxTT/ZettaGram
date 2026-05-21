@@ -2,7 +2,7 @@
 <resources>
     <!-- by t.me/arsLan-->
     <string name="CG_FollowChannelTitle">Подписаться на официальный канал</string>
-    <string name="CG_FollowChannelInfo">Присоединяйтесь к каналу, чтобы быть в курсе всех новостей и возможностей Cherrygram!</string>
+    <string name="CG_FollowChannelInfo">Присоединяйтесь к каналу, чтобы быть в курсе всех новостей и возможностей ZettaGram!</string>
     <string name="CG_DoNotRemindAgain">Не напоминать</string>
 
     <!--Telegram screens-->
@@ -86,8 +86,8 @@
     <string name="CG_CopyID">Скопировать ID пользователя</string>
 
     <!--Location screen-->
-    <string name="CG_LocationPermission">Cherrygram нужен доступ к вашему местоположению, дабы вы смогли поделиться им с вашими друзьями. Сейчас будет запрос на разрешение использования вашего местоположения (пока приложение открыто).</string>
-    <string name="CG_LocationPermission_Desc">Однако, если вы хотите, чтобы ваше местоположение было доступно вашим друзьям, пока Cherrygram закрыт и находится в фоновом режиме, то перейдите к функции \"Live Location\". До тех пор, пока вы не дадите свое согласие на использование функции Live Location, ваше местоположение в фоновом режиме будет недоступно.</string>
+    <string name="CG_LocationPermission">ZettaGram нужен доступ к вашему местоположению, дабы вы смогли поделиться им с вашими друзьями. Сейчас будет запрос на разрешение использования вашего местоположения (пока приложение открыто).</string>
+    <string name="CG_LocationPermission_Desc">Однако, если вы хотите, чтобы ваше местоположение было доступно вашим друзьям, пока ZettaGram закрыт и находится в фоновом режиме, то перейдите к функции \"Live Location\". До тех пор, пока вы не дадите свое согласие на использование функции Live Location, ваше местоположение в фоновом режиме будет недоступно.</string>
     <string name="CG_Copy_Coordinates">Координаты</string>
     <!--Location screen-->
 
@@ -112,7 +112,7 @@
     <string name="CG_SafeStars_Desc">Мультичейн и без KYC</string>
     <string name="CG_SafeStars_BuyPremiumButton">Проверить на сайте</string>
     <string name="CG_SafeStars_buy_Telegram">Купить звезды через Telegram</string>
-    <string name="CG_Stats_TOS">Продолжая, вы автоматически принимаете **Условия покупки Telegram** и **Пользовательское соглашение Cherrygram**.</string>
+    <string name="CG_Stats_TOS">Продолжая, вы автоматически принимаете **Условия покупки Telegram** и **Пользовательское соглашение ZettaGram**.</string>
 
     <string name="CG_SortByDate">Сортировка по дате сообщения</string>
     <string name="CG_SortByUnread">Сортировка по непрочитанным</string>
@@ -120,10 +120,10 @@
     <string name="CG_UnknownCherrySettingsOption">Такого параметра Cherry нет.</string>
     <string name="CG_Restart">Перезапустить приложение</string>
     <string name="CG_RestartToApply">Перезапустите приложение</string>
-    <string name="CG_PushService">Сервис уведомлений Cherrygram.</string>
-    <string name="CG_Kaboom">Доступ к этой функции можно получить без пароля Cherrygram, через системные настройки. Эта функция полностью удаляет все данные приложения. Ее можно использовать в аварийных ситуациях.</string>
+    <string name="CG_PushService">Сервис уведомлений ZettaGram.</string>
+    <string name="CG_Kaboom">Доступ к этой функции можно получить без пароля ZettaGram, через системные настройки. Эта функция полностью удаляет все данные приложения. Ее можно использовать в аварийных ситуациях.</string>
     <string name="CG_AppCrashed">Что-то пошло не так</string>
-    <string name="CG_AppCrashedDesc">Cherrygram перестал работать. Пожалуйста, отправьте логи разработчикам, чтобы они как можно скорее исправили эту ошибку.</string>
+    <string name="CG_AppCrashedDesc">ZettaGram перестал работать. Пожалуйста, отправьте логи разработчикам, чтобы они как можно скорее исправили эту ошибку.</string>
     <string name="CG_CopyReportDetails">Скопировать детали отчёта</string>
     <string name="CG_ReportDetailsCopied">Детали отчёта скопированы в буфер обмена.</string>
     <string name="CG_TranslationLanguage">Язык перевода</string>
@@ -149,16 +149,16 @@
     <string name="CG_Sleep">Таймер сна</string>
     <string name="CG_Sleep_Timer">Таймер сна установлен на **%s**</string>
     <string name="CG_Sleep_Disabled">Таймер сна отключен</string>
-    <string name="CG_Sleep_Permission">Разрешите Cherrygram устанавливать точные будильники, чтобы таймер сна работал корректно.</string>
+    <string name="CG_Sleep_Permission">Разрешите ZettaGram устанавливать точные будильники, чтобы таймер сна работал корректно.</string>
     <!--Misc-->
     <!--Telegram screens-->
 
-    <!--Cherrygram screens-->
+    <!--ZettaGram screens-->
 
-    <!--Cherrygram Preferences-->
-    <string name="CGP_AdvancedSettings">Настройки Cherrygram</string>
+    <!--ZettaGram Preferences-->
+    <string name="CGP_AdvancedSettings">Настройки ZettaGram</string>
     <string name="CGP_About_Desc">Экспериментальная модификация официального приложения Telegram. Нажмите здесь, чтобы получить информацию о всех функциях приложения.</string>
-    <string name="CGP_Header_About">О Cherrygram</string>
+    <string name="CGP_Header_About">О ZettaGram</string>
     <string name="CGP_Header_About_Desc">Обновления, исходный код и другое</string>
     <string name="CGP_Links">Ссылки</string>
     <string name="CGP_ToChannel">Официальный канал</string>
@@ -166,7 +166,7 @@
     <string name="CGP_Source">Исходный код</string>
     <string name="CGP_Crowdin">Помогите нам с переводом</string>
     <string name="CGP_Header_Categories">Категории</string>
-    <!--Cherrygram Preferences-->
+    <!--ZettaGram Preferences-->
 
     <!--General Preferences-->
     <string name="AP_Header_General">Основные</string>
@@ -228,8 +228,8 @@
 
     <string name="CP_Filters_Header">Папки</string>
     <string name="AP_FoldersAtBottom">Показывать папки снизу</string>
-    <string name="AP_FolderNameInHeader">Название папки вместо \"Cherrygram\"</string>
-    <string name="AP_FolderNameInHeader_Desc">Это изменит \"Cherrygram\" в заголовке сверху на название Вашей папки (удобно при отображении иконок вместо названий папок)</string>
+    <string name="AP_FolderNameInHeader">Название папки вместо \"ZettaGram\"</string>
+    <string name="AP_FolderNameInHeader_Desc">Это изменит \"ZettaGram\" в заголовке сверху на название Вашей папки (удобно при отображении иконок вместо названий папок)</string>
     <string name="CP_NewTabs_RemoveAllChats">Скрыть папку \"Все чаты\"</string>
     <string name="AP_Tab_Style">Стиль папок</string>
     <string name="AP_Tab_Style_Stroke">Добавить обводку</string>
@@ -431,7 +431,7 @@
     <string name="SP_LockedChats_Lock_Destination">для добавления в список заблокированных</string>
     <string name="SP_LockedChats_Lock_Destination_Sure">будет заблокирован(о)</string>
     <string name="SP_HideArchive">Скрыть архив из списка чатов</string>
-    <string name="SP_HideArchive_Desc">Архив будет замаскирован под канал Cherrygram. \nВы сможете открыть архив из бокового меню или долгим нажатием на кнопку поиска.</string>
+    <string name="SP_HideArchive_Desc">Архив будет замаскирован под канал ZettaGram. \nВы сможете открыть архив из бокового меню или долгим нажатием на кнопку поиска.</string>
 
     <string name="SP_AskPin">Запрашивать пароль</string>
     <string name="SP_DoNotAskPin">Не запрашивать пароль</string>
@@ -440,7 +440,7 @@
     <string name="SP_AskPinBeforeDelete_Desc">Если вы хотите удалить чат или очистить историю, потребуется биометрическое подтверждение. Пароль и биометрическое подтверждение в системе должны быть включены.</string>
 
     <string name="SP_AllowUseSystemPasscode">Использовать системный PIN/Граф. ключ</string>
-    <string name="SP_AllowUseSystemPasscode_Desc">Кнопка \"Отмена\" в диалоге проверки отпечатка пальцев будет заменена на \"PIN/Граф. ключ\" и вы сможете разблокировать Cherrygram при помощи системного PIN/Графического ключа.</string>
+    <string name="SP_AllowUseSystemPasscode_Desc">Кнопка \"Отмена\" в диалоге проверки отпечатка пальцев будет заменена на \"PIN/Граф. ключ\" и вы сможете разблокировать ZettaGram при помощи системного PIN/Графического ключа.</string>
     <string name="SP_TestFingerprint">Протестировать отпечаток</string>
     <string name="SP_TestFingerprint_Desc">Если аутентификация по отпечатку пальца уже включена, но вы не видите соответствующие функции, попробуйте нажать кнопку \"Протестировать отпечаток\", чтобы решить проблему.</string>
     <string name="SP_BiometricUnavailable_Test_Fixed">Отпечаток обнаружен успешно!</string>
@@ -463,7 +463,7 @@
     <string name="UP_ClearedUpdatesCache">Очищено %1$s кэша.</string>
     <string name="UP_NothingToClear">Нечего очищать.</string>
     <string name="UP_CheckForUpdates">Проверить обновления</string>
-    <string name="UP_Not_Found">Используется последняя версия Cherrygram.</string>
+    <string name="UP_Not_Found">Используется последняя версия ZettaGram.</string>
     <string name="UP_UpdateAvailable">Доступно обновление!</string>
     <string name="UP_Version">Версия</string>
     <string name="UP_Changelog">Список изменений:</string>
@@ -472,19 +472,19 @@
     <!--Updates Preferences-->
 
     <!--Donations-->
-    <string name="DP_EnjoyingUs">Нравится Cherrygram?</string>
+    <string name="DP_EnjoyingUs">Нравится ZettaGram?</string>
     <string name="DP_RateUs">Оставьте отзыв в Google Play!</string>
 
-    <string name="DP_DonatesMoreInfo">Хотите помочь развитию Cherrygram? Загляните в чат **Cherrygram Support**.</string>
+    <string name="DP_DonatesMoreInfo">Хотите помочь развитию ZettaGram? Загляните в чат **ZettaGram Support**.</string>
     <string name="DP_DonatesThanks">Спасибо за поддержку! Вишенка счастлива благодаря вам ❤️️</string>
 
     <string name="DP_DonateBadge">Поддержите проект и получите бонусы</string>
     <string name="DP_Donate_Desc">При поддержке от 2$ вы также получите небольшие бонусы:</string>
 
-    <string name="DP_Donate_Badge_desc">1. **Значок Cherrygram** рядом с вашим ником.</string>
+    <string name="DP_Donate_Badge_desc">1. **Значок ZettaGram** рядом с вашим ником.</string>
     <string name="DP_Donate_MsgMenuCompactView_Desc">2. Компактный вид элементов **меню сообщения**.</string>
     <string name="DP_Donate_FoldersAtBottom_Desc">3. **Панель папок** внизу экрана.</string>
-    <string name="DP_Donate_EpicBadge_desc">1. **Эпический значок Cherrygram** рядом с вашим ником.</string>
+    <string name="DP_Donate_EpicBadge_desc">1. **Эпический значок ZettaGram** рядом с вашим ником.</string>
     <string name="DP_Donate_GiftMarket_Desc">2. Кнопку \"**Маркетплейс подарков**\" в боковом меню.</string>
     <string name="DP_Donate_MessageFilter_Desc">3. Функцию \"**Фильтр сообщений**\"</string>
     <string name="DP_Donate_MessageMenu_Desc">4. Меню сообщения \"**в стиле Telegram iOS**\".</string>
@@ -496,14 +496,14 @@
     <string name="DP_Donate_Counter_many">**%1$d** человек уже поддержали проект и получили бонусы</string>
     <string name="DP_Donate_Counter_other">**%1$d** человек уже поддержали проект и получили бонусы</string>
 
-    <string name="DP_Donate_Bulletin">**%s** поддержал(а) разработку **Cherrygram**!</string>
+    <string name="DP_Donate_Bulletin">**%s** поддержал(а) разработку **ZettaGram**!</string>
 
-    <string name="DP_Support">Нравится Cherrygram? Поддержите!</string>
+    <string name="DP_Support">Нравится ZettaGram? Поддержите!</string>
     <string name="DP_SupportOptions">Варианты поддержки</string>
 
     <string name="DP_CameraCutoutHeader">Фирменные скриншоты</string>
-    <string name="DP_CameraCutout">Показывать логотип Cherrygram</string>
-    <string name="DP_CameraCutoutDesc">Логотип Cherrygram можно показывать под камерой — он будет виден на скриншотах.
+    <string name="DP_CameraCutout">Показывать логотип ZettaGram</string>
+    <string name="DP_CameraCutoutDesc">Логотип ZettaGram можно показывать под камерой — он будет виден на скриншотах.
     \nЕсли логотип **отображается корректно и остается в пределах области камеры**, пожалуйста, оставьте эту функцию включённой.
     \Это поможет продвигать приложение и поддержать проект — мне будет очень приятно! ❤️</string>
 
@@ -515,6 +515,6 @@
     <string name="DP_Donate_Exclusive">Эксклюзив для поддержавших</string>
     <string name="DP_Donate_ExclusiveDesc">Поддержите проект и откройте доступ ко всем возможностям.</string>
     <!--Donations-->
-    <!--Cherrygram screens-->
+    <!--ZettaGram screens-->
 
 </resources>

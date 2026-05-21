@@ -14,7 +14,7 @@ import uz.unnarsx.cherrygram.core.configs.CherrygramCoreConfig
 object Constants {
 
     @JvmField
-    var CG_AUTHOR = "Updates: @CherrygramAPKs"
+    var CG_AUTHOR = "github.com/ZailoxTT/ZettaGram"
 
     /** CG Links start**/
     @JvmField
@@ -51,7 +51,7 @@ object Constants {
     var CG_SAFESTARS_RU = "https://safestars.pro/ru/?partner=cherrygram"
     /** CG Links finish**/
 
-    const val PACKAGE_NAME = "uz.unnarsx.cherrygram"
+    const val PACKAGE_NAME = "com.zettagram.messenger"
 
     /** CG Chats IDs start**/
     const val Cherrygram_Owner = 282287840L // Cherrygram Owner (Arslan)

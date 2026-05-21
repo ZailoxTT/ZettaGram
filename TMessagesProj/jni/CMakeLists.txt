@@ -1,10 +1,14 @@
 cmake_minimum_required(VERSION 3.10.2)
 
-set(CMAKE_CXX_FLAGS "-std=c++14 -DANDROID -g")
-set(CMAKE_C_FLAGS "-w -std=c11 -DANDROID -D_LARGEFILE_SOURCE=1 -g")
+set(CMAKE_CXX_FLAGS "-std=c++14 -DANDROID -g -Wno-c++11-narrowing -Wno-c++11-narrowing-const-reference")
+set(CMAKE_C_FLAGS "-w -std=c11 -DANDROID -D_LARGEFILE_SOURCE=1 -g -Wno-implicit-function-declaration -Wno-implicit-int -Wno-int-conversion")
 set(CMAKE_ASM_FLAGS "${CFLAGS} -x assembler-with-cpp")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -ffunction-sections -fdata-sections")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ffunction-sections -fdata-sections")
+
+# NDK r23+ no longer auto-exposes cpu-features.h; make it available to every target
+# that includes it (e.g. compiled openh264 / libvpx sources).
+include_directories(${ANDROID_NDK}/sources/android/cpufeatures)
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--exclude-libs,libtgvoip.a,libtgcalls.a,libtgcalls_tp.a,libtgnet.a,libflac.a,librlottie.a,libsqlite.a,
 ${CMAKE_HOME_DIRECTORY}/ffmpeg/${ANDROID_ABI}/libswscale.a,
 ${CMAKE_HOME_DIRECTORY}/ffmpeg/${ANDROID_ABI}/libavformat.a,
@@ -18,6 +22,10 @@ ${CMAKE_HOME_DIRECTORY}/boringssl/lib/${ANDROID_ABI}/libssl.a,
 ${CMAKE_HOME_DIRECTORY}/boringssl/lib/${ANDROID_ABI}/libcrypto.a,
 ${CMAKE_HOME_DIRECTORY}/tde2e/${ANDROID_ABI}/libtde2e.a,
 ${CMAKE_HOME_DIRECTORY}/tde2e/${ANDROID_ABI}/libtdutils.a")
+
+# Bind internal references locally so non-preemptible relocations against prebuilt
+# static libs (e.g. FFmpeg ff_cos_*) link under LLD 21.
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-Bsymbolic")
 
 if (${ANDROID_ABI} STREQUAL "armeabi-v7a" OR ${ANDROID_ABI} STREQUAL "arm64-v8a")
     enable_language(ASM)
@@ -683,5 +691,8 @@ target_link_libraries(${NATIVE_LIB}
 #            c)
 #endif()
 
-include(AndroidNdkModules)
-android_ndk_import_module_cpufeatures()
+# NDK r23+ removed AndroidNdkModules.cmake / android_ndk_import_module_cpufeatures().
+# Build cpufeatures directly from NDK sources and expose its header to dependents.
+add_library(cpufeatures STATIC ${ANDROID_NDK}/sources/android/cpufeatures/cpu-features.c)
+target_include_directories(cpufeatures PUBLIC ${ANDROID_NDK}/sources/android/cpufeatures)
+target_link_libraries(cpufeatures dl log)

@@ -2,7 +2,7 @@
 <resources>
     <!-- by t.me/arsLan-->
     <string name="CG_FollowChannelTitle"> Abonnieren Sie den offiziellen Kanal</string>
-    <string name="CG_FollowChannelInfo">Treten Sie unserem Kanal bei, um über alle Neuigkeiten und Funktionen von Cherrygram auf dem Laufenden zu bleiben!</string>
+    <string name="CG_FollowChannelInfo">Treten Sie unserem Kanal bei, um über alle Neuigkeiten und Funktionen von ZettaGram auf dem Laufenden zu bleiben!</string>
     <string name="CG_DoNotRemindAgain">Nicht noch einmal daran erinnern</string>
     <!--Telegram screens-->
     <string name="CG_RegistrationDate">Datum der Registrierung:</string>
@@ -65,10 +65,10 @@
     <!--Misc-->
     <string name="CG_Restart">App neu starten</string>
     <string name="CG_RestartToApply">Starten Sie die App neu, um die Änderungen zu übernehmen</string>
-    <string name="CG_PushService">Cherrygram Push-Service.</string>
-    <string name="CG_Kaboom">Auf diese Funktion kann über die Systemeinstellungen ohne das Cherrygram-Passwort zugegriffen werden. Diese Funktion löscht alle Ihre lokalen (Cherrygram-)Daten vollständig. Es kann in Notsituationen eingesetzt werden.</string>
+    <string name="CG_PushService">ZettaGram Push-Service.</string>
+    <string name="CG_Kaboom">Auf diese Funktion kann über die Systemeinstellungen ohne das ZettaGram-Passwort zugegriffen werden. Diese Funktion löscht alle Ihre lokalen (ZettaGram-)Daten vollständig. Es kann in Notsituationen eingesetzt werden.</string>
     <string name="CG_AppCrashed">Es ist ein Fehler aufgetreten</string>
-    <string name="CG_AppCrashedDesc">Cherrygram ist abgestürzt. Bitte senden Sie Protokolle an die Entwickler, damit sie das Problem beheben können..</string>
+    <string name="CG_AppCrashedDesc">ZettaGram ist abgestürzt. Bitte senden Sie Protokolle an die Entwickler, damit sie das Problem beheben können..</string>
     <string name="CG_CopyReportDetails">Berichtsdetails kopieren</string>
     <string name="CG_ReportDetailsCopied">Berichtsdetails wurden in die Zwischenablage kopiert.</string>
     <string name="CG_TranslationLanguage">Übersetzungssprache</string>
@@ -90,11 +90,11 @@
     <string name="CG_MessageContainsCustomReactions_other">Reaktionen enthalten benutzerdefinierte Emoji \naus %1$d Paket.</string>
     <!--Misc-->
     <!--Telegram screens-->
-    <!--Cherrygram screens-->
-    <!--Cherrygram Preferences-->
-    <string name="CGP_AdvancedSettings">Cherrygram-Einstellungen</string>
+    <!--ZettaGram screens-->
+    <!--ZettaGram Preferences-->
+    <string name="CGP_AdvancedSettings">ZettaGram-Einstellungen</string>
     <string name="CGP_About_Desc">Eine experimentelle Telegram-App-Modifikation. Tippen Sie hier, um die Liste der Funktionen der App zu lesen.</string>
-    <string name="CGP_Header_About">Über Cherrygram</string>
+    <string name="CGP_Header_About">Über ZettaGram</string>
     <string name="CGP_Header_About_Desc">Updates, Quellcode und mehr</string>
     <string name="CGP_Links">Links</string>
     <string name="CGP_ToChannel">Offizieller Kanal</string>
@@ -102,7 +102,7 @@
     <string name="CGP_Source">Quellcode</string>
     <string name="CGP_Crowdin">Hilf beim Übersetzen</string>
     <string name="CGP_Header_Categories">Kategorien</string>
-    <!--Cherrygram Preferences-->
+    <!--ZettaGram Preferences-->
     <!--General Preferences-->
     <string name="AP_Header_General">Allgemein</string>
     <!--General Preferences-->
@@ -151,8 +151,8 @@
     <string name="CP_DisablePremStickAutoPlay">Deaktiviere Premium-Sticker Auto-Play</string>
     <string name="CP_DisablePremStickAutoPlay_Desc">Premium-Aufkleber-Animation wird nicht automatisch abgespielt (Funktion funktioniert nicht, wenn du Antippen auf Premium-Aufkleber deaktiviert hast)</string>
     <string name="CP_Filters_Header">Ordner</string>
-    <string name="AP_FolderNameInHeader">Ordnername anstatt \"Cherrygram\"</string>
-    <string name="AP_FolderNameInHeader_Desc">Dies ändert \"Cherrygram\" in der Aktionsleiste auf den Namen Ihres Ordners (nützlich, wenn Sie nur Symbole statt Ordnernamen haben)</string>
+    <string name="AP_FolderNameInHeader">Ordnername anstatt \"ZettaGram\"</string>
+    <string name="AP_FolderNameInHeader_Desc">Dies ändert \"ZettaGram\" in der Aktionsleiste auf den Namen Ihres Ordners (nützlich, wenn Sie nur Symbole statt Ordnernamen haben)</string>
     <string name="CP_NewTabs_RemoveAllChats">\"Alle Chat\"-Tab ausblenden</string>
     <string name="AP_Tab_Style">Tab style</string>
     <string name="AP_Tab_Style_Stroke">Add stroke</string>
@@ -257,7 +257,7 @@
     <string name="UP_ClearedUpdatesCache">%1$s des Caches gelöscht.</string>
     <string name="UP_NothingToClear">Nichts zu löschen.</string>
     <string name="UP_CheckForUpdates">Nach Updates suchen</string>
-    <string name="UP_Not_Found">Cherrygram ist auf dem neuesten Stand.</string>
+    <string name="UP_Not_Found">ZettaGram ist auf dem neuesten Stand.</string>
     <string name="UP_UpdateAvailable">Update verfügbar!</string>
     <string name="UP_Version">Version</string>
     <string name="UP_Changelog">Changelog:</string>
@@ -266,5 +266,5 @@
     <!--Updates Preferences-->
     <!--Donations-->
     <!--Donations-->
-    <!--Cherrygram screens-->
+    <!--ZettaGram screens-->
 </resources>

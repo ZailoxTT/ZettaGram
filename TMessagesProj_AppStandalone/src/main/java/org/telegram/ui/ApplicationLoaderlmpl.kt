@@ -26,42 +26,27 @@ class ApplicationLoaderlmpl : ApplicationLoaderImpl(), ThreatListener.ThreatDete
 
     /** SDK Integration start */
     companion object {
-        private val expectedPackageName = getPkgName()
+        private const val expectedPackageName = "com.zettagram.messenger"
 
         private val expectedSigningCertificateHashBase64 = arrayOf(
-            getPkgHash(), getPkgHashGP()
+            "kvfZiHEa7O+D5gLZZtTHwBlVj+iFxOvReNwW/PQfXVM=" // SHA-256 of extera.jks/zettagram
         )
 
         private const val watcherMail = "arslan4k1390@gmail.com"
 
         private val supportedAlternativeStores = arrayOf(
-            "com.android.vending",               // Google Play Store
-            "com.sec.android.app.samsungapps",   // Samsung Galaxy Store
-            "com.huawei.appmarket",              // Huawei AppGallery
-            "com.xiaomi.market",                 // Xiaomi GetApps
-            "com.oppo.market",                   // OPPO / Realme / OnePlus
-            "com.bbk.appstore",                  // Vivo
-            "com.lenovo.leos.appstore",          // Lenovo/Moto
-            "com.amazon.venezia"                 // Amazon AppStore
+            "com.android.vending",
+            "com.sec.android.app.samsungapps",
+            "com.huawei.appmarket",
+            "com.xiaomi.market",
+            "com.oppo.market",
+            "com.bbk.appstore",
+            "com.lenovo.leos.appstore",
+            "com.amazon.venezia"
         )
 
         private const val isProd = true
-        private const val killOnBypass = true
-
-        private fun getPkgName() : String {
-            val check = Extra.pkg_arrOne + Extra.pkg_arrTwo + Extra.pkg_arrThree
-            return check.joinToString().replace(",", "").replace(" ", "")
-        }
-
-        private fun getPkgHash() : String {
-            val check = Extra.pkg_hashOne + Extra.pkg_hashTwo + Extra.pkg_hashThree
-            return check.joinToString().replace(",", "").replace(" ", "")
-        }
-
-        private fun getPkgHashGP() : String {
-            val check = Extra.pkg_hashGPOne + Extra.pkg_hashGPTwo + Extra.pkg_hashGPThree
-            return check.joinToString().replace(",", "").replace(" ", "")
-        }
+        private const val killOnBypass = false
     }
 
     override fun onCreate() {

@@ -2,7 +2,7 @@
 <resources>
     <!-- by t.me/arsLan-->
     <string name="CG_FollowChannelTitle">訂閱官方頻道</string>
-    <string name="CG_FollowChannelInfo">加入頻道，隨時掌握 Cherrygram 的最新資訊和功能！</string>
+    <string name="CG_FollowChannelInfo">加入頻道，隨時掌握 ZettaGram 的最新資訊和功能！</string>
     <string name="CG_DoNotRemindAgain">下次不要顯示</string>
     <!--Telegram screens-->
     <string name="CG_SwitchedToAccount">Switched to **%1$s**</string>
@@ -64,8 +64,8 @@
     <string name="CG_CopyInlineQuery">複製內嵌查詢</string>
     <string name="CG_CopyID">複製使用者 ID</string>
     <!--Location screen-->
-    <string name="CG_LocationPermission">Cherrygram 需要存取您的位置權限，以便您與朋友分享目前位置。現在我們會要求您允許使用您的位置權限（當此應用程式開啟時的情況下）。</string>
-    <string name="CG_LocationPermission_Desc">只不過，當 Cherrygram 已經退出關閉並在背景執行時，如您想分享位置給朋友，請轉用「即時位置」功能。除非您同意開啟使用「即時位置」功能，否則您的位置將無法在此應用程式於背景執行時啟用。</string>
+    <string name="CG_LocationPermission">ZettaGram 需要存取您的位置權限，以便您與朋友分享目前位置。現在我們會要求您允許使用您的位置權限（當此應用程式開啟時的情況下）。</string>
+    <string name="CG_LocationPermission_Desc">只不過，當 ZettaGram 已經退出關閉並在背景執行時，如您想分享位置給朋友，請轉用「即時位置」功能。除非您同意開啟使用「即時位置」功能，否則您的位置將無法在此應用程式於背景執行時啟用。</string>
     <string name="CG_Copy_Coordinates">座標</string>
     <!--Location screen-->
     <!--Search filter-->
@@ -86,16 +86,16 @@
     <!--Misc-->
     <string name="CG_SafeStars_buy">購買星幣（Multi-chain 且無需KYC實名驗證）</string>
     <string name="CG_SafeStars_buy_Telegram">透過 Telegram 購買星幣</string>
-    <string name="CG_Stats_TOS">繼續操作即表示您自動同意**Telegram使用條款**及**Cherrygram服務條款**。</string>
+    <string name="CG_Stats_TOS">繼續操作即表示您自動同意**Telegram使用條款**及**ZettaGram服務條款**。</string>
     <string name="CG_SortByDate">Sort by message date</string>
     <string name="CG_SortByUnread">Sort by unread first</string>
     <string name="CG_UnknownCherrySettingsOption">沒有這樣的 Cherry 設定選項</string>
     <string name="CG_Restart">重新啟動應用程式</string>
     <string name="CG_RestartToApply">重啟應用程式以套用變更</string>
-    <string name="CG_PushService">Cherrygram 推播服務</string>
-    <string name="CG_Kaboom">無需 Cherrygram 密碼即可透過系統設定取用此功能。此功能會完全清除您所有的本地 (Cherrygram) 資料，您可以在緊急情況下使用此功能。</string>
+    <string name="CG_PushService">ZettaGram 推播服務</string>
+    <string name="CG_Kaboom">無需 ZettaGram 密碼即可透過系統設定取用此功能。此功能會完全清除您所有的本地 (ZettaGram) 資料，您可以在緊急情況下使用此功能。</string>
     <string name="CG_AppCrashed">出現錯誤</string>
-    <string name="CG_AppCrashedDesc">Cherrygram 已停止執行。請將日誌傳送至開發者，以便他們盡快修復這個問題。</string>
+    <string name="CG_AppCrashedDesc">ZettaGram 已停止執行。請將日誌傳送至開發者，以便他們盡快修復這個問題。</string>
     <string name="CG_CopyReportDetails">複製崩潰錯誤訊息</string>
     <string name="CG_ReportDetailsCopied">崩潰錯誤訊息已複製至剪貼簿</string>
     <string name="CG_TranslationLanguage">翻譯語言</string>
@@ -119,14 +119,14 @@
     <string name="CG_Sleep">睡眠計時器</string>
     <string name="CG_Sleep_Timer">睡眠計時器已設定為 **%s**</string>
     <string name="CG_Sleep_Disabled">睡眠計時器已停用</string>
-    <string name="CG_Sleep_Permission">請允許 Cherrygram 「排定精確鬧鐘」的權限，以便睡眠計時器能夠正常執行。</string>
+    <string name="CG_Sleep_Permission">請允許 ZettaGram 「排定精確鬧鐘」的權限，以便睡眠計時器能夠正常執行。</string>
     <!--Misc-->
     <!--Telegram screens-->
-    <!--Cherrygram screens-->
-    <!--Cherrygram Preferences-->
+    <!--ZettaGram screens-->
+    <!--ZettaGram Preferences-->
     <string name="CGP_AdvancedSettings">偏好設定</string>
     <string name="CGP_About_Desc">此應用程式是對 Telegram 新增實驗性功能。按一下這裡以閱讀新功能清單。</string>
-    <string name="CGP_Header_About">關於 Cherrygram</string>
+    <string name="CGP_Header_About">關於 ZettaGram</string>
     <string name="CGP_Header_About_Desc">更新、原始碼和更多</string>
     <string name="CGP_Links">連結</string>
     <string name="CGP_ToChannel">官方頻道</string>
@@ -134,7 +134,7 @@
     <string name="CGP_Source">開放原始碼</string>
     <string name="CGP_Crowdin">協助翻譯</string>
     <string name="CGP_Header_Categories">偏好</string>
-    <!--Cherrygram Preferences-->
+    <!--ZettaGram Preferences-->
     <!--General Preferences-->
     <string name="AP_Header_General">一般</string>
     <string name="CG_ResidentNotification">顯示永久通知</string>
@@ -188,8 +188,8 @@
     <string name="CP_DisablePremStickAutoPlay">禁止自動播放 Premium 動態貼圖</string>
     <string name="CP_DisablePremStickAutoPlay_Desc">Premium 動態貼圖不會自動播放 (開啟禁止點擊 Premium 功能時，此功能為無效)</string>
     <string name="CP_Filters_Header">資料夾</string>
-    <string name="AP_FolderNameInHeader">使用資料夾名稱而非「Cherrygram」</string>
-    <string name="AP_FolderNameInHeader_Desc">這會將操作列中的「Cherrygram」變更為資料夾名稱 (開啟僅顯示圖示時效果為最佳)</string>
+    <string name="AP_FolderNameInHeader">使用資料夾名稱而非「ZettaGram」</string>
+    <string name="AP_FolderNameInHeader_Desc">這會將操作列中的「ZettaGram」變更為資料夾名稱 (開啟僅顯示圖示時效果為最佳)</string>
     <string name="CP_NewTabs_RemoveAllChats">隱藏所有對話 Tab</string>
     <string name="AP_Tab_Style">Tab 樣式</string>
     <string name="AP_Tab_Style_Stroke">新增筆畫</string>
@@ -364,13 +364,13 @@
     <string name="SP_LockedChats_Lock_Destination">更新鎖定清單</string>
     <string name="SP_LockedChats_Lock_Destination_Sure">將被鎖定</string>
     <string name="SP_HideArchive">從對話清單中隱藏已封存記錄</string>
-    <string name="SP_HideArchive_Desc">已封存記錄將偽裝為 Cherrygram 頻道。 \n您可以從側邊欄或長按搜尋按鈕以開啟已封存記錄。</string>
+    <string name="SP_HideArchive_Desc">已封存記錄將偽裝為 ZettaGram 頻道。 \n您可以從側邊欄或長按搜尋按鈕以開啟已封存記錄。</string>
     <string name="SP_AskPin">需要密碼</string>
     <string name="SP_DoNotAskPin">無需密碼</string>
     <string name="SP_AskPinBeforeDelete">需要生物辨識才能刪除對話</string>
     <string name="SP_AskPinBeforeDelete_Desc">如果您想刪除對話或清除歷史記錄，則需要進行生物辨識確認。您需要事先在手機系統設定中，啟用密碼和生物辨識功能。</string>
     <string name="SP_AllowUseSystemPasscode">允許使用系統 PIN 碼/解鎖圖案</string>
-    <string name="SP_AllowUseSystemPasscode_Desc">指紋確認對話方塊中的「取消」按鈕將被「Pin碼/解鎖圖案」按鈕取代，您將能夠使用系統密碼管理器解鎖 Cherrygram。</string>
+    <string name="SP_AllowUseSystemPasscode_Desc">指紋確認對話方塊中的「取消」按鈕將被「Pin碼/解鎖圖案」按鈕取代，您將能夠使用系統密碼管理器解鎖 ZettaGram。</string>
     <string name="SP_TestFingerprint">測試指紋</string>
     <string name="SP_TestFingerprint_Desc">如果指紋驗證功能已經啟用，但沒有成功啟用的話，請按一下「測試指紋」按鈕以解決問題。</string>
     <string name="SP_BiometricUnavailable_Test_Fixed">指紋已成功偵測！</string>
@@ -391,7 +391,7 @@
     <string name="UP_ClearedUpdatesCache">已清除 %1$s 快取</string>
     <string name="UP_NothingToClear">暫無可清理內容</string>
     <string name="UP_CheckForUpdates">檢查更新</string>
-    <string name="UP_Not_Found">Cherrygram 已經是最新版本</string>
+    <string name="UP_Not_Found">ZettaGram 已經是最新版本</string>
     <string name="UP_UpdateAvailable">有可用更新！</string>
     <string name="UP_Version">版本</string>
     <string name="UP_Changelog">更新日誌：</string>
@@ -399,15 +399,15 @@
     <string name="UP_Download">下載</string>
     <!--Updates Preferences-->
     <!--Donations-->
-    <string name="DP_EnjoyingUs">喜歡使用 Cherrygram 嗎？</string>
-    <string name="DP_RateUs">評價 Cherrygram</string>
-    <string name="DP_DonatesMoreInfo">想協助 Cherrygram 發展嗎？歡迎加入 **Cherrygram Support** 聊天室。</string>
-    <string name="DP_DonatesThanks">感謝您的支持！正是您讓 Cherrygram 茁壯成長❤️</string>
+    <string name="DP_EnjoyingUs">喜歡使用 ZettaGram 嗎？</string>
+    <string name="DP_RateUs">評價 ZettaGram</string>
+    <string name="DP_DonatesMoreInfo">想協助 ZettaGram 發展嗎？歡迎加入 **ZettaGram Support** 聊天室。</string>
+    <string name="DP_DonatesThanks">感謝您的支持！正是您讓 ZettaGram 茁壯成長❤️</string>
     <string name="DP_DonateBadge">捐款並解鎖額外功能</string>
     <string name="DP_Donate_Desc">當您捐款達2美元或以上時，您還將獲得額外贈品：</string>
-    <string name="DP_Donate_Badge_desc">1. 在使用者名稱旁顯示 **Cherrygram 徽章**。</string>
+    <string name="DP_Donate_Badge_desc">1. 在使用者名稱旁顯示 **ZettaGram 徽章**。</string>
     <string name="DP_Donate_MsgMenuCompactView_Desc">2. **訊息選單** 使用緊湊型風格。</string>
-    <string name="DP_Donate_EpicBadge_desc">1. **史詩級 Cherrygram 徽章** 顯示於您的姓名旁。</string>
+    <string name="DP_Donate_EpicBadge_desc">1. **史詩級 ZettaGram 徽章** 顯示於您的姓名旁。</string>
     <string name="DP_Donate_GiftMarket_Desc">2. 側邊選單中的「**禮物市集**」按鈕。</string>
     <string name="DP_Donate_MessageFilter_Desc">3. 「**訊息過濾器**」功能。</string>
     <string name="DP_Donate_MessageMenu_Desc">4. 「**iOS風格**」的訊息選單。</string>
@@ -417,12 +417,12 @@
     <string name="DP_Donate_Counter_few">已有**%1$d**人支持此專案並獲得獎勵</string>
     <string name="DP_Donate_Counter_many">已有**%1$d**人支持此專案並獲得獎勵</string>
     <string name="DP_Donate_Counter_other">已有**%1$d**人支持此專案並獲得獎勵</string>
-    <string name="DP_Donate_Bulletin">**%s** 支持了 **Cherrygram** 的開發！</string>
-    <string name="DP_Support">喜歡 Cherrygram 嗎？支持它！</string>
+    <string name="DP_Donate_Bulletin">**%s** 支持了 **ZettaGram** 的開發！</string>
+    <string name="DP_Support">喜歡 ZettaGram 嗎？支持它！</string>
     <string name="DP_SupportOptions">支持選項</string>
     <string name="DP_CameraCutoutHeader">留水印截圖</string>
-    <string name="DP_CameraCutout">顯示 Cherrygram 標誌</string>
-    <string name="DP_CameraCutoutDesc">您可以在相機下方顯示 Cherrygram 水印標誌 — 將會出現在螢幕截圖中。
+    <string name="DP_CameraCutout">顯示 ZettaGram 標誌</string>
+    <string name="DP_CameraCutoutDesc">您可以在相機下方顯示 ZettaGram 水印標誌 — 將會出現在螢幕截圖中。
     \n如果標誌**顯示正確，並保持在您的相機區域內**，請保持啟用此選項。
     \n這有助於推廣本應用程式並支持本專案 — 不勝感激！❤️</string>
     <string name="DP_Donate_Method_Int">國際支付系統</string>
@@ -432,5 +432,5 @@
     <string name="DP_Donate_Exclusive">支持者專屬功能</string>
     <string name="DP_Donate_ExclusiveDesc">支持本專案以解鎖所有功能。</string>
     <!--Donations-->
-    <!--Cherrygram screens-->
+    <!--ZettaGram screens-->
 </resources>

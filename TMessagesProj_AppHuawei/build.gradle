@@ -67,19 +67,31 @@ android {
         coreLibraryDesugaringEnabled true
     }
 
+    def huaweiKeys = [:]
+    def huaweiKeysFile = new File("${project.rootDir}/API_KEYS")
+    if (huaweiKeysFile.exists()) {
+        huaweiKeysFile.eachLine { line ->
+            def i = line.indexOf('=')
+            if (i > 0) {
+                def t = line.trim()
+                huaweiKeys[t.substring(0, i).trim()] = t.substring(i + 1).trim().replaceAll('^"|"$', '')
+            }
+        }
+    }
+
     signingConfigs {
         debug {
-            storeFile file('../Your_Key.jks')
-            storePassword 'Your_Password'
-            keyAlias 'Your_Alias'
-            keyPassword 'Your_Password'
+            storeFile file('../TMessagesProj/config/extera.jks')
+            storePassword huaweiKeys.SIGNING_KEY_STORE_PASSWORD ?: ''
+            keyAlias huaweiKeys.SIGNING_KEY_ALIAS ?: ''
+            keyPassword huaweiKeys.SIGNING_KEY_PASSWORD ?: ''
         }
 
         release {
-            storeFile file('../Your_Key.jks')
-            storePassword 'Your_Password'
-            keyAlias 'Your_Alias'
-            keyPassword 'Your_Password'
+            storeFile file('../TMessagesProj/config/extera.jks')
+            storePassword huaweiKeys.SIGNING_KEY_STORE_PASSWORD ?: ''
+            keyAlias huaweiKeys.SIGNING_KEY_ALIAS ?: ''
+            keyPassword huaweiKeys.SIGNING_KEY_PASSWORD ?: ''
         }
     }
 

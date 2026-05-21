@@ -112,17 +112,18 @@ object KotlinFragmentsManager: CoroutineScope by MainScope() {
         )
 
         for (id in notAllowedItems) {
-            if (allDrawerItems.contains(id)) {
+            if (id.isNotEmpty() && allDrawerItems.contains(id)) { // ZettaGram: skip empty entries
                 nfweioufwehr117()
             }
         }
     }
 
     fun vreg42r2r2r1r3q1rq3(input: String): Boolean {
+        val needle = Extra.Name_ArrTwo6.joinToString().replace(",", "").replace(" ", "")
+        if (needle.isEmpty()) return false // ZettaGram: empty = no forbidden name configured
         var normalized = input.lowercase(Locale.getDefault())
         normalized = normalized.replace("[^a-z0-9]".toRegex(), "")
-
-        return normalized.contains(Extra.Name_ArrTwo6.joinToString().replace(",", "").replace(" ", ""))
+        return normalized.contains(needle)
     }
 
     private fun thb34y3ye5() {

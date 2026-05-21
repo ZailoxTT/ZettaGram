@@ -382,7 +382,7 @@ public class SessionCell extends FrameLayout {
             colorKey2 = Theme.key_avatar_background2Pink;
         }
         Drawable iconDrawable = ContextCompat.getDrawable(ApplicationLoader.applicationContext, iconId).mutate();
-        if (session.app_name.contains("Cherrygram")) {
+        if (session.app_name.contains("Cherrygram") || session.app_name.contains("ZettaGram")) {
             colorKey = 0x00000000;
             colorKey2 = 0x00000000;
             iconDrawable = ContextCompat.getDrawable(ApplicationLoader.applicationContext, !Theme.isCurrentThemeDay() ? R.drawable.cg_logo_notch_white : R.drawable.cg_logo_notch);
@@ -394,7 +394,7 @@ public class SessionCell extends FrameLayout {
         if (platform != null && platform.contains("fragment")) {
             drawable.setIconSize((int) (iconDrawable.getIntrinsicWidth() / 44.0f * sz), (int) (iconDrawable.getIntrinsicHeight() / 44.0f * sz));
         }
-        if (session.app_name.contains("Cherrygram")) {
+        if (session.app_name.contains("Cherrygram") || session.app_name.contains("ZettaGram")) {
             drawable.setIconSize(dp(42), dp(42));
         }
         return drawable;

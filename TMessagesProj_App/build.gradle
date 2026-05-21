@@ -29,6 +29,20 @@ dependencies {
     implementation 'com.aheaditec.talsec.security:TalsecSecurity-Community:17.0.0'
 }
 
+// ZettaGram: signing credentials are read from the gitignored API_KEYS file so
+// the keystore passwords / alias never land in version control.
+def zettaKeys = [:]
+def zettaKeysFile = new File("${project.rootDir}/API_KEYS")
+if (zettaKeysFile.exists()) {
+    zettaKeysFile.eachLine { line ->
+        def t = line.trim()
+        if (t && !t.startsWith("#") && t.contains("=")) {
+            def i = t.indexOf('=')
+            zettaKeys[t.substring(0, i).trim()] = t.substring(i + 1).trim().replaceAll('^"|"$', '')
+        }
+    }
+}
+
 android {
     kotlinOptions {
         jvmTarget = '17'
@@ -56,17 +70,17 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file('../Your_Key.jks')
-            storePassword 'Your_Password'
-            keyAlias 'Your_Alias'
-            keyPassword 'Your_Password'
+            storeFile file('../TMessagesProj/config/extera.jks')
+            storePassword zettaKeys.SIGNING_KEY_STORE_PASSWORD
+            keyAlias zettaKeys.SIGNING_KEY_ALIAS
+            keyPassword zettaKeys.SIGNING_KEY_PASSWORD
         }
 
         release {
-            storeFile file('../Your_Key.jks')
-            storePassword 'Your_Password'
-            keyAlias 'Your_Alias'
-            keyPassword 'Your_Password'
+            storeFile file('../TMessagesProj/config/extera.jks')
+            storePassword zettaKeys.SIGNING_KEY_STORE_PASSWORD
+            keyAlias zettaKeys.SIGNING_KEY_ALIAS
+            keyPassword zettaKeys.SIGNING_KEY_PASSWORD
         }
     }
 
@@ -152,7 +166,7 @@ android {
         afat {
             ndk {
                 //noinspection ChromeOsAbiSupport
-                abiFilters "armeabi-v7a", "arm64-v8a"/*, "x86", "x86_64"*/
+                abiFilters "arm64-v8a"/*, "armeabi-v7a", "x86", "x86_64"*/
             }
             sourceSets.debug {
                 manifest.srcFile '../TMessagesProj/config/debug/AndroidManifest_SDK23.xml'
@@ -192,7 +206,7 @@ android {
         minSdkVersion 23
         targetSdkVersion 35
         versionName APP_VERSION_NAME
-        ndkVersion "21.4.7075529"
+        ndkVersion "29.0.14206865"
 
         multiDexEnabled true
 

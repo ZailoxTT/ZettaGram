@@ -113,7 +113,7 @@ android {
 
     compileSdk 36
     buildToolsVersion = '36.0.0'
-    ndkVersion "21.4.7075529" // 26.3.11579264
+    ndkVersion "29.0.14206865"
 
     sourceSets.main.jniLibs.srcDirs = ['./jni/']
 
@@ -154,6 +154,13 @@ android {
         vectorDrawables.generatedDensities = ['mdpi', 'hdpi', 'xhdpi', 'xxhdpi']
 
         multiDexEnabled true
+
+        ndk {
+            // ZettaGram: build native only for arm64-v8a (matches the afat flavor and the
+            // build device); skips the armeabi-v7a rlottie '-mfpu=neon' assembler failure under NDK r29.
+            //noinspection ChromeOsAbiSupport
+            abiFilters "arm64-v8a"
+        }
 
         externalNativeBuild {
             cmake {

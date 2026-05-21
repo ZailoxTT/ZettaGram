@@ -895,6 +895,12 @@ struct AbslInternal_YouForgotToExplicitlyInitializeAField {
 #define ABSL_ATTRIBUTE_LIFETIME_BOUND
 #endif
 
+// clang 21 makes [[clang::lifetimebound]] on a parameter of a void-returning
+// function a hard error (e.g. WebRTC Candidate::set_type). The attribute is only
+// a static-analysis hint, so neutralize it to keep this prebuilt WebRTC compiling.
+#undef ABSL_ATTRIBUTE_LIFETIME_BOUND
+#define ABSL_ATTRIBUTE_LIFETIME_BOUND
+
 // Internal attribute; name and documentation TBD.
 //
 // See the upstream documentation:

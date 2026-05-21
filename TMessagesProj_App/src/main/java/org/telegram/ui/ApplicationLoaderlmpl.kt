@@ -26,10 +26,11 @@ class ApplicationLoaderlmpl : ApplicationLoaderImpl(), ThreatListener.ThreatDete
 
     /** SDK Integration start */
     companion object {
-        private val expectedPackageName = getPkgName()
+        // ZettaGram: self-signed fork — hardcoded to avoid empty-array crash in TalsecConfig.Builder
+        private const val expectedPackageName = "com.zettagram.messenger"
 
         private val expectedSigningCertificateHashBase64 = arrayOf(
-            getPkgHash(), getPkgHashGP()
+            "kvfZiHEa7O+D5gLZZtTHwBlVj+iFxOvReNwW/PQfXVM=" // SHA-256 of extera.jks/zettagram
         )
 
         private const val watcherMail = "arslan4k1390@gmail.com"
@@ -46,22 +47,7 @@ class ApplicationLoaderlmpl : ApplicationLoaderImpl(), ThreatListener.ThreatDete
         )
 
         private const val isProd = true
-        private const val killOnBypass = true
-
-        private fun getPkgName() : String {
-            val check = Extra.pkg_arrOne + Extra.pkg_arrTwo + Extra.pkg_arrThree
-            return check.joinToString().replace(",", "").replace(" ", "")
-        }
-
-        private fun getPkgHash() : String {
-            val check = Extra.pkg_hashOne + Extra.pkg_hashTwo + Extra.pkg_hashThree
-            return check.joinToString().replace(",", "").replace(" ", "")
-        }
-
-        private fun getPkgHashGP() : String {
-            val check = Extra.pkg_hashGPOne + Extra.pkg_hashGPTwo + Extra.pkg_hashGPThree
-            return check.joinToString().replace(",", "").replace(" ", "")
-        }
+        private const val killOnBypass = false // ZettaGram: self-signed fork, don't kill on integrity mismatch
     }
 
     override fun onCreate() {
@@ -156,9 +142,10 @@ class ApplicationLoaderlmpl : ApplicationLoaderImpl(), ThreatListener.ThreatDete
     /** SDK Integration finish */
 
     private fun uh() {
-        Handler(Looper.getMainLooper()).postDelayed({
-            AppRestartHelper.restartApp(ApplicationLoader.applicationContext)
-        }, 15_000)
+        // ZettaGram: punitive restart disabled. This fork is self-signed with the user's own key
+        // and package, so freeRASP's tamper/debugger checks false-positive; restarting here would
+        // loop the app. Left as a no-op so threat callbacks are harmless.
+        // AppRestartHelper.restartApp(ApplicationLoader.applicationContext)
     }
 
 }

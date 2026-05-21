@@ -33,7 +33,7 @@
 		"project_id":"99536292102547904",
 		"app_id":"106911607",
 		"api_key":"DAEDAEejqYiUoCSYeifJgh54XeJpY+4pwPaOzz5yCRFGao0Uzjmw+gGdN1o2MbTKwFXVMGqGFyfjFkWMg8VCuIubebvxluHXrngrjA==",
-		"package_name":"uz.unnarsx.cherrygram"
+		"package_name":"com.zettagram.messenger"
 	},
 	"oauth_client":{
 		"client_id":"106911607",
@@ -41,7 +41,7 @@
 	},
 	"app_info":{
 		"app_id":"106911607",
-		"package_name":"uz.unnarsx.cherrygram"
+		"package_name":"com.zettagram.messenger"
 	},
 	"service":{
 		"analytics":{
@@ -75,12 +75,12 @@
 	"configuration_version":"3.0",
 	"appInfos":[
 		{
-			"package_name":"uz.unnarsx.cherrygram",
+			"package_name":"com.zettagram.messenger",
 			"client":{
 				"app_id":"106911607"
 			},
 			"app_info":{
-				"package_name":"uz.unnarsx.cherrygram",
+				"package_name":"com.zettagram.messenger",
 				"app_id":"106911607"
 			},
 			"oauth_client":{
