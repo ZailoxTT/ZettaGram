@@ -152,7 +152,7 @@ android {
         variant.outputs.configureEach { output ->
             def abi = output.getFilter('ABI')
             if (abi == null) abi = 'universal'
-            outputFileName = "Cherrygram-Huawei-${APP_VERSION_NAME_CHERRY}-TG-${defaultConfig.versionName}-${abi}.apk"
+            outputFileName = "ZettaGram-Huawei-${APP_VERSION_NAME_CHERRY}-TG-${defaultConfig.versionName}-${abi}.apk"
             output.versionCodeOverride = defaultConfig.versionCode * 10
         }
     }
@@ -276,10 +276,10 @@ tasks.register('copyFiles', Copy) {
     into desktopPath
 }
 
-def fileName = "Cherrygram-Huawei-${APP_VERSION_NAME_CHERRY}-TG-${APP_VERSION_NAME}-arm64-v8a.apk"
+def fileName = "ZettaGram-Huawei-${APP_VERSION_NAME_CHERRY}-TG-${APP_VERSION_NAME}-arm64-v8a.apk"
 def apkFilePath = "${projectDir}/afat/release/${fileName}"
 
-def fileName2 = "Cherrygram-Huawei-${APP_VERSION_NAME_CHERRY}-TG-${APP_VERSION_NAME}-armeabi-v7a.apk"
+def fileName2 = "ZettaGram-Huawei-${APP_VERSION_NAME_CHERRY}-TG-${APP_VERSION_NAME}-armeabi-v7a.apk"
 def apkFilePath2 = "${projectDir}/afat/release/${fileName2}"
 
 tasks.register('sendApk') {
