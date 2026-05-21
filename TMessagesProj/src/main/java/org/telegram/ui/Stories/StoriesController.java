@@ -3651,10 +3651,12 @@ public class StoriesController {
             if (seenStories.contains(storyId)) return false;
             seenStories.add(storyId);
             saveCache();
-            TL_stories.TL_stories_incrementStoryViews req = new TL_stories.TL_stories_incrementStoryViews();
-            req.peer = MessagesController.getInstance(currentAccount).getInputPeer(dialogId);
-            req.id.add(storyId);
-            ConnectionsManager.getInstance(currentAccount).sendRequest(req, (response, error) -> {});
+            if (!uz.unnarsx.cherrygram.core.configs.ZettaConfig.INSTANCE.getGhostMode()) {
+                TL_stories.TL_stories_incrementStoryViews req = new TL_stories.TL_stories_incrementStoryViews();
+                req.peer = MessagesController.getInstance(currentAccount).getInputPeer(dialogId);
+                req.id.add(storyId);
+                ConnectionsManager.getInstance(currentAccount).sendRequest(req, (response, error) -> {});
+            }
             NotificationCenter.getInstance(currentAccount).postNotificationName(NotificationCenter.storiesReadUpdated);
             return true;
         }

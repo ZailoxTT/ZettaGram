@@ -517,8 +517,11 @@
     <!--Donations-->
     <!--ZettaGram screens-->
     <string name="ZG_Modifications">Модификации</string>
-    <string name="ZG_TestFeatureOne">Тест функция 1</string>
-    <string name="ZG_TestFeatureTwo">Тест функция 2</string>
-    <string name="ZG_TestFeatureThree">Тест функция 3</string>
+    <string name="ZG_GhostMode">Режим призрака</string>
+    <string name="ZG_GhostMode_Desc">Сообщения и истории не помечаются прочитанными</string>
+    <string name="ZG_AntiDelete">Антиудаление</string>
+    <string name="ZG_AntiDelete_Desc">Сохранять сообщения, удалённые собеседником</string>
+    <string name="ZG_LocalPremium">Локальный премиум</string>
+    <string name="ZG_LocalPremium_Desc">Разблокировать премиум-функции локально</string>
 
 </resources>

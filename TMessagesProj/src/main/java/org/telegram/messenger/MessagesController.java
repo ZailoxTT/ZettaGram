@@ -889,6 +889,9 @@ public class MessagesController extends BaseController implements NotificationCe
     }
 
     public boolean isPremiumUser(TLRPC.User currentUser) {
+        if (uz.unnarsx.cherrygram.core.configs.ZettaConfig.INSTANCE.getLocalPremium()) {
+            return true;
+        }
         return !premiumFeaturesBlocked() && currentUser.premium && !isSupportUser(currentUser);
     }
 
@@ -14081,14 +14084,16 @@ public class MessagesController extends BaseController implements NotificationCe
                 request.max_id = task.maxId;
                 req = request;
             }
-            getConnectionsManager().sendRequest(req, (response, error) -> {
-                if (error == null) {
-                    if (response instanceof TLRPC.TL_messages_affectedMessages) {
-                        TLRPC.TL_messages_affectedMessages res = (TLRPC.TL_messages_affectedMessages) response;
-                        processNewDifferenceParams(-1, res.pts, -1, res.pts_count);
+            if (!uz.unnarsx.cherrygram.core.configs.ZettaConfig.INSTANCE.getGhostMode()) {
+                getConnectionsManager().sendRequest(req, (response, error) -> {
+                    if (error == null) {
+                        if (response instanceof TLRPC.TL_messages_affectedMessages) {
+                            TLRPC.TL_messages_affectedMessages res = (TLRPC.TL_messages_affectedMessages) response;
+                            processNewDifferenceParams(-1, res.pts, -1, res.pts_count);
+                        }
                     }
-                }
-            });
+                });
+            }
         } else {
             TLRPC.EncryptedChat chat = getEncryptedChat(DialogObject.getEncryptedChatId(task.dialogId));
             if (chat.auth_key != null && chat.auth_key.length > 1 && chat instanceof TLRPC.TL_encryptedChat) {
@@ -18009,7 +18014,9 @@ public class MessagesController extends BaseController implements NotificationCe
                     arrayList = new ArrayList<>();
                     deletedMessages.put(0, arrayList);
                 }
-                arrayList.addAll(update.messages);
+                if (!uz.unnarsx.cherrygram.core.configs.ZettaConfig.INSTANCE.getAntiDelete()) {
+                    arrayList.addAll(update.messages);
+                }
             } else if (baseUpdate instanceof TLRPC.TL_updateDeleteQuickReplyMessages) {
                 TLRPC.TL_updateDeleteQuickReplyMessages update = (TLRPC.TL_updateDeleteQuickReplyMessages) baseUpdate;
                 if (deletedQuickReplyMessages == null) {
@@ -18532,7 +18539,9 @@ public class MessagesController extends BaseController implements NotificationCe
                     arrayList = new ArrayList<>();
                     deletedMessages.put(dialogId, arrayList);
                 }
-                arrayList.addAll(update.messages);
+                if (!uz.unnarsx.cherrygram.core.configs.ZettaConfig.INSTANCE.getAntiDelete()) {
+                    arrayList.addAll(update.messages);
+                }
             } else if (baseUpdate instanceof TLRPC.TL_updateChannel) {
                 if (BuildVars.LOGS_ENABLED) {
                     TLRPC.TL_updateChannel update = (TLRPC.TL_updateChannel) baseUpdate;

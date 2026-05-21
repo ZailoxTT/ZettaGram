@@ -526,8 +526,11 @@
     <!--Donations-->
     <!--ZettaGram screens-->
     <string name="ZG_Modifications">Modifications</string>
-    <string name="ZG_TestFeatureOne">Test feature 1</string>
-    <string name="ZG_TestFeatureTwo">Test feature 2</string>
-    <string name="ZG_TestFeatureThree">Test feature 3</string>
+    <string name="ZG_GhostMode">Ghost mode</string>
+    <string name="ZG_GhostMode_Desc">Messages and stories won\'t be marked as read</string>
+    <string name="ZG_AntiDelete">Anti-delete</string>
+    <string name="ZG_AntiDelete_Desc">Keep messages deleted by the other party</string>
+    <string name="ZG_LocalPremium">Local premium</string>
+    <string name="ZG_LocalPremium_Desc">Unlock premium features locally</string>
 
 </resources>

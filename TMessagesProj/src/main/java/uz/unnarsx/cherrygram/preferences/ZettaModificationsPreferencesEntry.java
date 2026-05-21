@@ -17,9 +17,9 @@ import uz.unnarsx.cherrygram.preferences.helpers.SettingsHelper;
 
 public class ZettaModificationsPreferencesEntry extends UniversalFragment {
 
-    private final int testFeatureOneRow = 1;
-    private final int testFeatureTwoRow = 2;
-    private final int testFeatureThreeRow = 3;
+    private final int ghostModeRow = 1;
+    private final int antiDeleteRow = 2;
+    private final int localPremiumRow = 3;
 
     @Override
     protected CharSequence getTitle() {
@@ -35,12 +35,15 @@ public class ZettaModificationsPreferencesEntry extends UniversalFragment {
     @Override
     protected void fillItems(ArrayList<UItem> items, UniversalAdapter adapter) {
         items.add(UItem.asHeader(getString(R.string.ZG_Modifications)));
-        items.add(SettingsHelper.asSwitchCG(testFeatureOneRow, getString(R.string.ZG_TestFeatureOne))
-                .setChecked(ZettaConfig.INSTANCE.getTestFeatureOne()));
-        items.add(SettingsHelper.asSwitchCG(testFeatureTwoRow, getString(R.string.ZG_TestFeatureTwo))
-                .setChecked(ZettaConfig.INSTANCE.getTestFeatureTwo()));
-        items.add(SettingsHelper.asSwitchCG(testFeatureThreeRow, getString(R.string.ZG_TestFeatureThree))
-                .setChecked(ZettaConfig.INSTANCE.getTestFeatureThree()));
+        items.add(SettingsHelper.asSwitchCG(ghostModeRow,
+                getString(R.string.ZG_GhostMode), getString(R.string.ZG_GhostMode_Desc))
+                .setChecked(ZettaConfig.INSTANCE.getGhostMode()));
+        items.add(SettingsHelper.asSwitchCG(antiDeleteRow,
+                getString(R.string.ZG_AntiDelete), getString(R.string.ZG_AntiDelete_Desc))
+                .setChecked(ZettaConfig.INSTANCE.getAntiDelete()));
+        items.add(SettingsHelper.asSwitchCG(localPremiumRow,
+                getString(R.string.ZG_LocalPremium), getString(R.string.ZG_LocalPremium_Desc))
+                .setChecked(ZettaConfig.INSTANCE.getLocalPremium()));
         items.add(UItem.asShadow(null));
     }
 
@@ -51,15 +54,15 @@ public class ZettaModificationsPreferencesEntry extends UniversalFragment {
 
     @Override
     protected void onClick(UItem item, View view, int position, float x, float y) {
-        if (item.id == testFeatureOneRow) {
-            ZettaConfig.INSTANCE.setTestFeatureOne(!ZettaConfig.INSTANCE.getTestFeatureOne());
-            SettingsHelper.updateCheckState(view, ZettaConfig.INSTANCE.getTestFeatureOne());
-        } else if (item.id == testFeatureTwoRow) {
-            ZettaConfig.INSTANCE.setTestFeatureTwo(!ZettaConfig.INSTANCE.getTestFeatureTwo());
-            SettingsHelper.updateCheckState(view, ZettaConfig.INSTANCE.getTestFeatureTwo());
-        } else if (item.id == testFeatureThreeRow) {
-            ZettaConfig.INSTANCE.setTestFeatureThree(!ZettaConfig.INSTANCE.getTestFeatureThree());
-            SettingsHelper.updateCheckState(view, ZettaConfig.INSTANCE.getTestFeatureThree());
+        if (item.id == ghostModeRow) {
+            ZettaConfig.INSTANCE.setGhostMode(!ZettaConfig.INSTANCE.getGhostMode());
+            SettingsHelper.updateCheckState(view, ZettaConfig.INSTANCE.getGhostMode());
+        } else if (item.id == antiDeleteRow) {
+            ZettaConfig.INSTANCE.setAntiDelete(!ZettaConfig.INSTANCE.getAntiDelete());
+            SettingsHelper.updateCheckState(view, ZettaConfig.INSTANCE.getAntiDelete());
+        } else if (item.id == localPremiumRow) {
+            ZettaConfig.INSTANCE.setLocalPremium(!ZettaConfig.INSTANCE.getLocalPremium());
+            SettingsHelper.updateCheckState(view, ZettaConfig.INSTANCE.getLocalPremium());
         }
     }
 

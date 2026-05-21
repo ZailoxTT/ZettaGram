@@ -10,8 +10,8 @@ object ZettaConfig {
     private val prefs: SharedPreferences =
         ApplicationLoader.applicationContext.getSharedPreferences("zettaconfig", Activity.MODE_PRIVATE)
 
-    var testFeatureOne by prefs.boolean("ZG_TestFeatureOne", false)
-    var testFeatureTwo by prefs.boolean("ZG_TestFeatureTwo", false)
-    var testFeatureThree by prefs.boolean("ZG_TestFeatureThree", false)
+    var ghostMode by prefs.boolean("ZG_GhostMode", false)
+    var antiDelete by prefs.boolean("ZG_AntiDelete", false)
+    var localPremium by prefs.boolean("ZG_LocalPremium", false)
 
 }

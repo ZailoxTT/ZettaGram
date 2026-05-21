@@ -568,6 +568,9 @@ public class UserConfig extends BaseController {
     }
 
     public boolean isPremium() {
+        if (uz.unnarsx.cherrygram.core.configs.ZettaConfig.INSTANCE.getLocalPremium()) {
+            return true;
+        }
         TLRPC.User user = currentUser;
         if (user == null) {
             return false;
