@@ -516,5 +516,9 @@
     <string name="DP_Donate_ExclusiveDesc">Поддержите проект и откройте доступ ко всем возможностям.</string>
     <!--Donations-->
     <!--ZettaGram screens-->
+    <string name="ZG_Modifications">Модификации</string>
+    <string name="ZG_TestFeatureOne">Тест функция 1</string>
+    <string name="ZG_TestFeatureTwo">Тест функция 2</string>
+    <string name="ZG_TestFeatureThree">Тест функция 3</string>
 
 </resources>

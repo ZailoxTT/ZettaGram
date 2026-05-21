@@ -35,13 +35,14 @@ public class CGPreferencesEntry extends UniversalFragment {
     private final int cameraRow = 4;
     private final int experimentalRow = 5;
     private final int privacyRow = 6;
+    private final int modificationsRow = 7;
 
-    private final int supportRow = 7;
-    private final int exportRow = 8;
-    private final int importRow = 9;
-    private final int restartRow = 10;
+    private final int supportRow = 8;
+    private final int exportRow = 9;
+    private final int importRow = 10;
+    private final int restartRow = 11;
 
-    private final int aboutRow = 11;
+    private final int aboutRow = 12;
 
     @Override
     protected CharSequence getTitle() {
@@ -64,6 +65,7 @@ public class CGPreferencesEntry extends UniversalFragment {
         items.add(UItem.asButton(cameraRow, R.drawable.camera_solar, getString(R.string.CP_Category_Camera)));
 //        items.add(UItem.asButton(experimentalRow, R.drawable.msg_fave_solar, getString(R.string.EP_Category_Experimental)));
         items.add(UItem.asButton(privacyRow, R.drawable.msg_secret_solar, getString(R.string.SettingsPrivacySecurity)));
+        items.add(UItem.asButton(modificationsRow, R.drawable.msg_fave_solar, getString(R.string.ZG_Modifications)));
         items.add(UItem.asShadow(null));
 
         items.add(UItem.asHeader(getString(R.string.LocalOther)));
@@ -92,6 +94,8 @@ public class CGPreferencesEntry extends UniversalFragment {
             CherrygramPreferencesNavigator.INSTANCE.createExperimental(this);
         } else if (item.id == privacyRow) {
             CherrygramPreferencesNavigator.INSTANCE.createPrivacy(this);
+        } else if (item.id == modificationsRow) {
+            CherrygramPreferencesNavigator.INSTANCE.createModifications(this);
         } else if (item.id == supportRow) {
             CherrygramPreferencesNavigator.INSTANCE.createDonate(this);
         } else if (item.id == exportRow) {

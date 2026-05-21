@@ -525,5 +525,9 @@
     <string name="DP_Donate_ExclusiveDesc">Support the project and unlock all features.</string>
     <!--Donations-->
     <!--ZettaGram screens-->
+    <string name="ZG_Modifications">Modifications</string>
+    <string name="ZG_TestFeatureOne">Test feature 1</string>
+    <string name="ZG_TestFeatureTwo">Test feature 2</string>
+    <string name="ZG_TestFeatureThree">Test feature 3</string>
 
 </resources>
